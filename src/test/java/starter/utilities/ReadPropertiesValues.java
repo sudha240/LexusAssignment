@@ -27,9 +27,7 @@ public class ReadPropertiesValues{
             }
 
         }catch (Exception e) {
-//            LOGGER.info("Error inside readProperty.. "+e.getMessage());
     System.out.print("Exception in readProperty: "+e.getMessage());
-//            throw e;
         }
         return propVal;
     }
