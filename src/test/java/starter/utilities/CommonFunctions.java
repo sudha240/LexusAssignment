@@ -79,42 +79,6 @@ public class CommonFunctions extends PageObject{
             }
         }
     }
-//    public void selectTodayFromCalendar(By FieldName, By sFieldValue){
-//        if ($(FieldName).isDisplayed()) {
-//            $(FieldName).click();
-//
-//        }
-//    }
-//    public void selectDropDownValue(By FieldName, By FieldValueList , String sFieldValue){
-//      Actions action = new Actions(getDriver());
-//      $(FieldName).click();
-//        ListOfWebElementFacades dropDownList = $$(FieldValueList);
-//        if(!sFieldValue.isEmpty()) {
-//            for (WebElement list : dropDownList) {
-//                if (list.getText().equalsIgnoreCase(sFieldValue)) {
-//                    list.click();
-//                    break;
-//                }
-//                action.sendKeys(Keys.ARROW_DOWN).build().perform();
-//            }
-//        }
-//    }
-//    public void verifyDataForGivenField(By FieldName, String sFieldValue){
-//      String sValueFromUI = $(FieldName).getAttribute("data-value");
-//        try {
-//          //  assertEquals(sValueFromUI, sFieldValue);
-//            assertThat(sValueFromUI).isEqualTo(sFieldValue);
-//            // Log the success message
-//            Serenity.recordReportData().withTitle("Assertion Success ").andContents("Value is " + sValueFromUI);
-//        } catch (AssertionError e) {
-//            // Log the error message and continue execution
-//            Serenity.recordReportData().withTitle("Assertion Fail ").andContents("Value from UI is " + sValueFromUI + " while Default Value to validate is " + sFieldValue);
-//        }
-//    }
-//    public void enterData(By FieldName, String sFieldValue){
-//        $(FieldName).click();
-//        $(FieldName).sendKeys(sFieldValue);
-//    }
     public void buttonEnabled(By FieldNameDisabled, By FieldName){
 
             if (!$(FieldNameDisabled).isPresent()) {
