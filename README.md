@@ -13,14 +13,19 @@ to make the test code more stable, easier to understand, and easier to maintain.
 
 ## Executing the tests
 To run the project, just run the `CucumberTestSuite` test runner class
-Or run either `mvn clean verify` or `gradle test` from the command line.
+Or run either `mvn clean verify` from any IDE by setting working directory as `Lexus/LexusAssignment`
 
 By default, the tests will run using Chrome.
 You can run them in Firefox by overriding the `driver` system property,
 $ mvn clean verify -Ddriver=firefox
-Or
-$ gradle clean test -Pdriver=firefox
 
 ## Accessing the Reports
 The test results will be recorded in the `target/site/serenity` directory and
 Report named 'index.html' is present in `target/site/serenity` directory.
+
+## See the Results
+To see the results with screenshots -
+Open the index.html in chrome browser.
+Click on Test Results tab beside the Summary and Scroll down then click on Scenario link
+To See assertion results click on the Assertion Success/Failure button.
+
