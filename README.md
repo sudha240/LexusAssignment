@@ -15,6 +15,10 @@ to make the test code more stable, easier to understand, and easier to maintain.
 To run the project, just run the `CucumberTestSuite` test runner class
 Or run either `mvn clean verify` from any IDE by setting working directory as `Lexus/LexusAssignment`
 
+##Execution mode is by default in open browser mode
+If need be then please change serenity.conf headless.mode = true if we want headless mode execution.
+File is present `src/test/resources/serenity.conf` 
+
 By default, the tests will run using Chrome.
 You can run them in Firefox by overriding the `driver` system property,
 $ mvn clean verify -Ddriver=firefox
